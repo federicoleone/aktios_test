@@ -1,0 +1,57 @@
+header{
+	ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 10px;
+
+    @media (max-width: 600px) {
+    	justify-content: center;
+    }
+
+		li{
+		  margin: 0 10px;
+		  display: inline-block;
+		  align-self: center;
+
+		  &.menu_boxes_container{
+			height: 26px;
+		    overflow: hidden;		  	
+		  }
+
+		  a{
+		  	color: $color-black;
+		  	font-size: 14px;
+			display: inline-block;
+			align-self: center;
+		  }
+
+		  .menu_boxes{
+		    width: 26px;
+		    display: inline-block;	
+			height: 26px;
+		    overflow: hidden;
+		  }
+
+		  &.icon-bell{
+		  	a{
+	  			background-color: $background-black;
+	  			display: inline-block;
+				text-align: center;  			
+	  			-webkit-border-radius: 50%;
+	  			-moz-border-radius: 50%;
+	  			border-radius: 50%;
+	  			width: 34px;
+	  			height: 34px;
+		  	}
+		  	
+
+		  	i{
+		  		color: $color-white;
+		  		margin-top: 10px;
+		  	}
+		  }
+		}
+	}
+
+}

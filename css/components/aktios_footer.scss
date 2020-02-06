@@ -1,0 +1,31 @@
+footer{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		border-top:1px solid $color-middle-gray;
+		background-color: $color-gray;
+
+    @media (max-width: 600px) {
+    	justify-content: center;
+    }
+
+	ul{
+		margin: 10px;
+		text-align: center;
+		li{
+			display: inline-block;
+
+			a{
+				color: $color-dark-gray;
+				font-weight: bold;
+				margin: 0 10px;
+				font-size: 14px;
+			}
+		}
+	}
+}
